@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input.success {
+    border-color: #4CAF50; /* Green for valid input */
+}
+
+input.error {
+    border-color: #FF5733; /* Red for invalid input */
+}
+
+.error-box {
+    visibility: hidden;
+    background-color: rgb(251, 230, 230);
+    border: 1px solid rgb(255, 0, 89);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(255, 0, 89);
+    margin-bottom: 10px;
+    width: 100%;  /* Ensures it stays within the form */
+    box-sizing: border-box; /* Prevents overflow */
+    display: block; /* Forces proper spacing */
+    word-wrap: break-word; /* Ensures long text wraps */
+    text-align: left; /* Aligns text properly */
+}
+
+.error-box.visible {
+    visibility: visible;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #E53888;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #d32e75;
+}
