@@ -16,15 +16,15 @@ Welcome to my portfolio website! This site showcases my projects, skills, and ac
 
 ## 📂 Project Structure
 ```
-portfolio-website/
-│-- public/          # Static assets
-│-- src/
-│   │-- components/  # Reusable UI components
-│   │-- pages/       # Page components
-│   │-- styles/      # Global and component styles
-│-- README.md        # Project documentation
-│-- package.json     # Dependencies & scripts
-│-- .gitignore       # Ignored files
+portfolio-website/        
+│-- images/
+│   │-- icons/       
+│-- README.md    # Project documentation
+│-- script.js     
+│-- styles.css         
+│-- index.html
+│-- validate.html
+│-- vstyle.css      
 ```
 
 ## 🚀 Installation & Usage
